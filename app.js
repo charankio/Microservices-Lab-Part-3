@@ -242,7 +242,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     });
 });
 
-
+// feature 1
 function fetchReview() {
 
     jsonObj = [];
@@ -252,7 +252,6 @@ function fetchReview() {
 
     !($.trim($('#phoneReview').val()) == '') ? item ["title"] = $('#phoneReview').val(): '';
   
-
     jsonObj.push(item);
 
     //jQuery Ajax request
@@ -263,8 +262,6 @@ function fetchReview() {
         contentType: 'text/plain', //contentType, which is text/plain since json is sent as plain text.
         data: jsonObj[0], //data to be sent
         
-
-
         success: function (data) { //on success calls this functions and passes the API response as the data parameter.
             productList='';
 
